@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import greeting from './cli.js';
+import readlineSync from "readline-sync";
+import greeting from "./cli.js";
 
 const rounds = 3;
 
@@ -13,15 +13,15 @@ const playGame = (gameData, gameMessage) => {
     const [question, correctAnswer] = gameData();
 
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question("Your answer: ");
 
     if (userAnswer === correctAnswer) {
-      console.log('Correct!');
+      console.log("Correct!");
     } else {
       console.log(
-        `'${userAnswer}' is wrong answer. Correct was '${correctAnswer}'.`,
-        `Let's try again, ${userName}`,
+        `'${userAnswer}' is wrong answer ;(. Correct was '${correctAnswer}'.`
       );
+      console.log(`Let's try again, ${userName}!`);
       return; // break function execution
     }
   }
