@@ -4,9 +4,9 @@ import greeting from './cli.js';
 
 const rounds = 3;
 
-const playGame = (gameData, message) => {
+const playGame = (gameData, gameMessage) => {
   const userName = greeting();
-  console.log(message);
+  console.log(gameMessage);
 
   for (let i = 0; i < rounds; i += 1) {
     // destructure gameData() (returns array)

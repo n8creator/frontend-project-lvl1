@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import playGame from '../index.js';
 
-const introMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => (num % 2 === 0);
 
@@ -15,5 +15,5 @@ const returnGameData = () => {
 };
 
 export default () => {
-  playGame(returnGameData, introMessage);
+  playGame(returnGameData, gameMessage);
 };
