@@ -1,5 +1,6 @@
 install:
 	@npm ci
+	npm link  # install local packages
 
 brain-games:
 	@node bin/brain-games.js
@@ -10,4 +11,4 @@ publish:
 lint:
 	npx eslint . --fix
 
-.PHONY: install brain-games publish lint
+.PHONY: install brain-games brain-even publish lint

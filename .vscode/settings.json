@@ -9,16 +9,12 @@
     }
   ],
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "html"
-  ],
+  "eslint.validate": ["javascript", "typescript", "html"],
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
@@ -26,5 +22,6 @@
     //"configFile": "./.eslintrc.yml",
     "overrideConfigFile": "./.eslintrc.yml"
   },
-  "eslint.nodePath": "./node_modules"
+  "eslint.nodePath": "./node_modules",
+  "options.editorconfig": true
 }
