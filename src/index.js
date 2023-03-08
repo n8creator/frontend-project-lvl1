@@ -19,7 +19,7 @@ const playGame = (gameData, gameMessage) => {
       console.log('Correct!');
     } else {
       console.log(
-        `${userAnswer} is wrong answer. Correct was ${correctAnswer}.`,
+        `'${userAnswer}' is wrong answer. Correct was '${correctAnswer}'.`,
         `Let's try again, ${userName}`,
       );
       return; // break function execution
